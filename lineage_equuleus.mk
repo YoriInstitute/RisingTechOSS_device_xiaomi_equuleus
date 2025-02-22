@@ -16,6 +16,15 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 8 UD
 PRODUCT_MANUFACTURER := Xiaomi
 
+# RisingOS specific configure
+RISING_MAINTAINER="Kagura iYoRoy"
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RisingChipset="Snapdragon 845" \
+    RisingMaintainer="Kagura iYoRoy"
+TARGET_ENABLE_BLUR := true
+WITH_GMS := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="equuleus-user 8.1.0 OPM1.171019.026 V9.6.6.0.OECCNFD release-keys" \
     BuildFingerprint=Xiaomi/equuleus/equuleus:8.1.0/OPM1.171019.026/V9.6.6.0.OECCNFD:user/release-keys
